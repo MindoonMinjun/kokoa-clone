@@ -1,18 +1,14 @@
 .user-component {
-  display: flex;
-  align-items: center; /* 임의로 설정 */
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
+.user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
 }
 
-.user-component {
-  justify-content: space-between;
-}
-
-.user-component,
 .user-component__avatar {
   width: 70px;
   height: 70;
@@ -29,7 +25,7 @@
   margin-top: 8px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
-  white-space: nowrap;
+  display: inline;
 }
 
 .user-component__avatar--xl {
@@ -48,5 +44,17 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.user-component__text i {
+  color: tomato;
 }
